@@ -48,6 +48,15 @@ osapi.people.getOwnerFriends().execute(function(result) {
 $(".dRetrievedInfo").html(str);
 });
 
+osapi.activities.get().execute(function(result) {
+ str = $(".dRetrievedInfo").html();
+  str += "<br/>osapi.activities.get() #Activities: "+ result.totalResults;
+  var activities = result.list;
+  for (var i=0;i<activities.length;i++)
+    str += "<br />osapi.activities.get() activity ID: " + activities[i].id;
+  str += "<br />";
+$(".dRetrievedInfo").html(str);
+});
 
 
 
