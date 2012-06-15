@@ -9,11 +9,11 @@
 
 
 <script>
-osapi.people.getViewer().execute(function(result){
- alert('Your name is ' + result.name.givenName + ' ' + result.name.familyName + '!');
 
+osapi.people.getViewer().execute(function(result) {
+  alert('Your name is ' + result.displayname + ' ' + result.id + '!');
 });
-gadgets.MiniMessage.createTimerMessage("test test",10000);
+
     </script>
    ]]>
   </Content>
