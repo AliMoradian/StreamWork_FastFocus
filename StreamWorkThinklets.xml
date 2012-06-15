@@ -7,18 +7,18 @@
     <![CDATA[
 
 
+<div class="dRetrievedInfo" > </div>
 
+<script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js" type="text/javascript"></script>
 <script>
-
+var str = "";
 osapi.people.getViewer({fields: ['name', 'birthday']}).execute(function(result) {
-  alert('Your display name is ' + result.displayName + '!');
-  alert('Your id is ' + result.id + '!');
+  str += "Your display name is " + result.displayName;
+  str += "<br />Your id is " + result.id ;
 });
 
-osapi.people.getViewer().execute(function(result) {
-  alert('Your name is ' + result.displayname + ' ' + result.id + '!');
-});
 
+$(".dRetrievedInfo").html(str);
     </script>
    ]]>
   </Content>
