@@ -9,7 +9,10 @@
 
 
 <script>
-alert(osapi.people.getViewer());
+osapi.people.getViewer().execute(function(result){
+ alert('Your name is ' + result.name.givenName + ' ' + result.name.familyName + '!');
+
+});
 gadgets.MiniMessage.createTimerMessage("test test",10000);
     </script>
    ]]>
