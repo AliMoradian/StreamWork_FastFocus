@@ -29,7 +29,8 @@ $(".dRetrievedInfo").html(str);
 osapi.people.getViewerFriends().execute(function(result) {
  str = $(".dRetrievedInfo").html();
   str += "<br/> #Friends" + result.totalResults;
-  str += "<br/> " + result.entry[0].id ;
+  Array<Person> p= result.entry ;
+  str += p[0].id;
 $(".dRetrievedInfo").html(str);
 });
 
