@@ -19,7 +19,7 @@ osapi.people.getViewer({fields: ['name', 'birthday']}).execute(function(result) 
 $(".dRetrievedInfo").html(str);
 });
 
-osapi.people.getowner({fields: ['name', 'birthday']}).execute(function(result) {
+osapi.people.getOwner({fields: ['name', 'birthday']}).execute(function(result) {
  str = $(".dRetrievedInfo").html();
   str += "<br/> Activity Owner's display name is " + result.displayName;
   str += "<br />Activity owner's id is " + result.id ;
