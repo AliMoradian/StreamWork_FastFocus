@@ -9,8 +9,32 @@
  <link href="https://raw.github.com/abalpeep/StreamWork_FastFocus/master/style.css"   rel="Stylesheet"></link>
  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 
-<div class="dFastFocus_BodyContainer" >
-</div>
+ <div class="dFastFocus_BodyContainer">
+        <div class="dFastFocus_SectionContainer dFastFocus_SectionOne">
+            <div class="header">
+                Final list of key issues:
+            </div>
+            <div class="KeyIssuesList">
+                <div class="KeyIssue">
+                1-something something something
+                </div>
+            </div>
+        </div>
+        <div class="dFastFocus_SectionContainer dFastFocus_SectionTwo">
+        </div>
+        <div class="dFastFocus_SectionContainer dFastFocus_SectionThree">
+        </div>
+        <div class="dFastFocus_SectionContainer dFastFocus_SectionFour">
+        </div>
+        <div class="dFastFocus_SectionContainer dFastFocus_SectionFive">
+        </div>
+        <div class="dFastFocus_SectionContainer dFastFocus_SectionSix">
+        </div>
+        <div class="dFastFocus_SectionContainer dFastFocus_SectionSeven">
+        </div>
+        <div class="dFastFocus_SectionContainer dFastFocus_SectionEight">
+        </div>
+    </div>
 
 
 
