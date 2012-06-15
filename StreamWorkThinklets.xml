@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="DealersChoice">
+  <ModulePrefs title="FastFocus">
     <Require feature="osapi" />
   </ModulePrefs>
   <Content type="html">
     <![CDATA[
-<link href="https://raw.github.com/abalpeep/StreamWork_FastFocus/master/style.css" type="text/css" />
+
+ <link href="https://raw.github.com/abalpeep/StreamWork_FastFocus/master/style.css"   rel="Stylesheet"></link>
 <div class="dFastFocus_BodyContainer" > this is a test to see how it looks</div>
 
 <div class="dRetrievedInfo" style="height:300px;" >Loadin information. <br /> Please waite ...</div>
