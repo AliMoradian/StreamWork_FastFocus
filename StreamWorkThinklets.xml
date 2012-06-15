@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="FastFocus" height="1500">
+  <ModulePrefs title="FastFocus" >
     <Require feature="osapi"  />
   </ModulePrefs>
   <Content type="html">
@@ -10,11 +10,16 @@
  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <script>
   $(document).ready(function(){
+    adjustHeight();
     $(".KeyIssue").hover(
       function(){$(this).css("background","#ececec");},
       function(){$(this).css("background","white");});
   
   });
+  
+  function adjustHeight() {
+   gadgets.window.adjustHeight();
+}
 </script>
 
 
