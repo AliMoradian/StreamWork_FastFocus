@@ -31,7 +31,7 @@ osapi.people.getViewerFriends().execute(function(result) {
   str += "<br/> #Friends" + result.totalResults;
   var friends = result.list;
   for (var i=0;i<friends.length;i++)
-    str += "<br /> Friend list: name:" friends[i].displayName +" friend id:"+ friends[i].id;
+    str += "<br /> Friend list: name:" + friends[i].displayName +" friend id:"+ friends[i].id;
 $(".dRetrievedInfo").html(str);
 });
 
