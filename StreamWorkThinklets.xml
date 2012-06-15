@@ -38,7 +38,7 @@
 
 
 
-<div class="dRetrievedInfo" style="height:300px;" >Loadin information. <br /> Please waite ...</div>
+<div class="dRetrievedInfo" style="min-height:300px;float:left;" >Loadin information. <br /> Please waite ...</div>
 <script>
 var str = "";
 osapi.people.getViewer().execute(function(result) {
