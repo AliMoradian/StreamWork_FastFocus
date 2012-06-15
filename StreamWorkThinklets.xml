@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="FastFocus" height="400"  scrolling="true">
+  <ModulePrefs title="FastFocus"  scrolling="true">
     <Require feature="dynamic-height"/>
     <Require feature="osapi"  />
   </ModulePrefs>
@@ -10,6 +10,8 @@
  <link href="https://raw.github.com/abalpeep/StreamWork_FastFocus/master/style.css"   rel="Stylesheet"></link>
  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <script>
+window.onresize = adjustHeight;
+
   $(document).ready(function(){
     adjustHeight();
     $(".KeyIssue").hover(
