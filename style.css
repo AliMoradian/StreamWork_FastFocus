@@ -1,6 +1,9 @@
 .dFastFocus_BodyContainer
 {
     width: 700px;
+    display:inline-block;
+    padding:10px;
+    min-height:500px;
     border: 1px solid #C9C8C9;
     -webkit-border-radius: 6px;
     border-radius: 6px;
