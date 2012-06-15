@@ -6,7 +6,7 @@
   <Content type="html">
     <![CDATA[
 <link href="https://raw.github.com/abalpeep/StreamWork_FastFocus/master/style.css" type="text/css" />
-<div class="dFastFocus_BodyContainer" ></div>
+<div class="dFastFocus_BodyContainer" > this is a test to see how it looks</div>
 
 <div class="dRetrievedInfo" style="height:300px;" >Loadin information. <br /> Please waite ...</div>
 
