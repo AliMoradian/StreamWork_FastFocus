@@ -11,7 +11,7 @@
 <script>
   $(document).ready(function(){
     $(".KeyIssue").hover(
-      function(){$(this).css("background","gray");},
+      function(){$(this).css("background","#ececec");},
       function(){$(this).css("background","white");});
   
   });
@@ -41,6 +41,7 @@
             </div>
         </div>
         <div class="dFastFocus_SectionContainer dFastFocus_SectionTwo">
+        
         </div>
         <div class="dFastFocus_SectionContainer dFastFocus_SectionThree">
         </div>

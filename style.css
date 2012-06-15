@@ -4,41 +4,63 @@
 }
 .dFastFocus_SectionContainer
 {
-    width:100%;
-    float:left;
-    margin-bottom:10px;
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
 }
 .dFastFocus_SectionOne
-{}
+{
+}
 .dFastFocus_SectionOne .header
 {
-    font-size:18px;
-    color:Gray;
+    font-size: 18px;
+    color: Gray;
 }
 .dFastFocus_SectionOne .KeyIssuesList
 {
-    width:650px;
-    margin-left:25px;
-    margin-top:5px;
+    width: 650px;
+    margin-left: 25px;
+    margin-top: 5px;
 }
 .dFastFocus_SectionOne .KeyIssue
 {
-    width:650px;
-    margin-left:25px;
-    margin-top:5px;
+    width: 650px;
+    margin-left: 25px;
+    margin-top: 5px;
 }
 
 .dFastFocus_SectionTwo
-{}
+{
+}
+.dFastFocus_SectionTwo .text
+{
+    color: #ececec;
+    font-size: 16px;
+    width: 600px;
+    margin-left: 50px;
+}
 .dFastFocus_SectionThree
-{}
+{
+}
+.dFastFocus_SectionThree .BrainStormingPortionList
+{
+    width:650px;
+    margin-left:25px;
+    margin-bottom:5px;
+    font-size:14px;
+}
 .dFastFocus_SectionFour
-{}
+{
+}
 .dFastFocus_SectionFive
-{}
+{
+}
 .dFastFocus_SectionSix
-{}
+{
+}
 .dFastFocus_SectionSeven
-{}
+{
+}
 .dFastFocus_SectionEight
-{}
+{
+}
