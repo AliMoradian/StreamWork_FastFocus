@@ -185,55 +185,6 @@ window.onresize = adjustHeight;
 
 <div class="dRetrievedInfo" style="min-height:300px;float:left;" >Loadin information. <br /> Please waite ...</div>
 <script>
-var str = "";
-osapi.people.getViewer().execute(function(result) {
-  str += "osapi.people.getViewer display name is " + result.displayName;
-  str += "<br />osapi.people.getViewer id is " + result.id ;
-  str += "<br />";
-$(".dRetrievedInfo").html(str);
-});
-
-osapi.people.getOwner().execute(function(result) {
- str = $(".dRetrievedInfo").html();
-  str += "<br/>osapi.people.getOwner display name is " + result.displayName;
-  str += "<br />osapi.people.getOwner id is " + result.id ;
-  str += "<br />";
-$(".dRetrievedInfo").html(str);
-});
-
-osapi.people.getViewerFriends().execute(function(result) {
- str = $(".dRetrievedInfo").html();
-  str += "<br/>osapi.people.getViewerFriends() #Friends" + result.totalResults;
-  var friends = result.list;
-  for (var i=0;i<friends.length;i++)
-    str += "<br />osapi.people.getViewerFriends()  name:" + friends[i].displayName +" friend id:"+ friends[i].id;
-  str += "<br />";
-$(".dRetrievedInfo").html(str);
-});
-
-osapi.people.getOwnerFriends().execute(function(result) {
- str = $(".dRetrievedInfo").html();
-  str += "<br/>osapi.people.getOwnerFriends() #Friends" + result.totalResults;
-  var friends = result.list;
-  for (var i=0;i<friends.length;i++)
-    str += "<br />osapi.people.getOwnerFriends() name:" + friends[i].displayName +" friend id:"+ friends[i].id;
-  str += "<br />";
-$(".dRetrievedInfo").html(str);
-});
-
-osapi.activities.get({userId: '@viewer', groupId: '@friends', count: 20}).execute(function(result) {
-  str = $(".dRetrievedInfo").html();
-  if(!result.error)
-  {
-    var activities = result.list;
-    for (var i=0;i<activities.length;i++)
-      str += "<br />osapi.activities.get() activity ID: " + activities[i].title;
-  }
-  else{str += "<br /><span style='color:red'>Error occured while getting activites !!</span>";}
- str += "<br />";
-$(".dRetrievedInfo").html(str);
-});
-
 
 
     </script>
