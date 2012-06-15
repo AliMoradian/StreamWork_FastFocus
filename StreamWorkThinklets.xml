@@ -7,12 +7,14 @@
     <![CDATA[
 
  <link href="https://raw.github.com/abalpeep/StreamWork_FastFocus/master/style.css"   rel="Stylesheet"></link>
-<div class="dFastFocus_BodyContainer" > this is a test to see how it looks</div>
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+
+<div class="dFastFocus_BodyContainer" >
+</div>
+
+
 
 <div class="dRetrievedInfo" style="height:300px;" >Loadin information. <br /> Please waite ...</div>
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-<script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js" type="text/javascript"></script>
 <script>
 var str = "";
 osapi.people.getViewer().execute(function(result) {

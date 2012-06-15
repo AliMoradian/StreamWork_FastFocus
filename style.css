@@ -1,5 +1,37 @@
 .dFastFocus_BodyContainer
 {
-    width:700px;
-   background:yellow;
-    }
+    width: 700px;
+}
+.dFastFocus_SectionContainer
+{
+    width:100%;
+    float:left;
+    margin-bottom:10px;
+}
+.dFastFocus_SectionOne
+{}
+.dFastFocus_SectionOne .header
+{
+    font-size:18px;
+    color:Gray;
+}
+.dFastFocus_SectionOne .KeyIssuesList
+{
+    width:650px;
+    margin-left:25px;
+    margin-top:5px;
+}
+.dFastFocus_SectionTwo
+{}
+.dFastFocus_SectionThree
+{}
+.dFastFocus_SectionFour
+{}
+.dFastFocus_SectionFive
+{}
+.dFastFocus_SectionSix
+{}
+.dFastFocus_SectionSeven
+{}
+.dFastFocus_SectionEight
+{}
