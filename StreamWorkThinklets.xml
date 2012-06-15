@@ -50,10 +50,14 @@ $(".dRetrievedInfo").html(str);
 
 osapi.activities.get().execute(function(result) {
   str = $(".dRetrievedInfo").html();
-  var activities = result.list;
-  for (var i=0;i<activities.length;i++)
-    str += "<br />osapi.activities.get() activity ID: " + activities[i].title;
-  str += "<br />";
+  if(!result.error)
+  {
+    var activities = result.list;
+    for (var i=0;i<activities.length;i++)
+      str += "<br />osapi.activities.get() activity ID: " + activities[i].title;
+  }
+  else{str += "<br /><span style='color:red'>Error occured while getting activites !!</span>";}
+ str += "<br />";
 $(".dRetrievedInfo").html(str);
 });
 
