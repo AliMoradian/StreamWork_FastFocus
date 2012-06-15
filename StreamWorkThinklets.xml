@@ -10,6 +10,11 @@
 
 <script>
 
+osapi.people.getViewer({fields: ['name', 'birthday']}).execute(function(result) {
+  alert('Your name is ' + result.name + '!');
+  alert('Your id is ' + result.id + '!');
+});
+
 osapi.people.getViewer().execute(function(result) {
   alert('Your name is ' + result.displayname + ' ' + result.id + '!');
 });
