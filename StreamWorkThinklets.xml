@@ -231,6 +231,7 @@ $(function(){
         }
       }
     });
+gadgets.MiniMessage.createTimerMessage("test test",10000);
     </script>
    ]]>
   </Content>
