@@ -48,7 +48,7 @@ osapi.people.getOwnerFriends().execute(function(result) {
 $(".dRetrievedInfo").html(str);
 });
 
-osapi.activities.get().execute(function(result) {
+osapi.activities.get({userId: "@viewer"}).execute(function(result) {
   str = $(".dRetrievedInfo").html();
   if(!result.error)
   {
