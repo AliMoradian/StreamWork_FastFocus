@@ -3,7 +3,6 @@
     width: 700px;
     display: inline-block;
     padding: 10px;
-    min-height: 500px;
     border: 1px solid #C9C8C9;
     -webkit-border-radius: 6px;
     border-radius: 6px;
@@ -85,6 +84,39 @@
     color: black;
 }
 .dFastFocus_SectionFive
+{
+}
+.dFastFocus_SectionFive .text
+{
+    font-size: 18px;
+    color: Gray;
+}
+.dFastFocus_SectionFive .discussionContainer
+{
+}
+.dFastFocus_SectionFive .discussionItemContainer
+{
+    width: 630px;
+    padding: 10px;
+    margin-left: 25px;
+    font-size: 12px;
+    height: 300px;
+    overflow: auto;
+    border: 1px solid #C9C8C9;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 0 3px #CFCFCF;
+    box-shadow: 0 0 3px #CFCFCF;
+}
+.dFastFocus_SectionFive .discussionItem
+{
+    margin-bottom: 5px;
+}
+.dFastFocus_SectionFive .UserName
+{
+   color:Gray;
+}
+.dFastFocus_SectionFive .discussionText
 {
 }
 .dFastFocus_SectionSix

@@ -18,7 +18,7 @@
 </script>
 
 
- <div class="dFastFocus_BodyContainer">
+  <div class="dFastFocus_BodyContainer">
         <div class="dFastFocus_SectionContainer dFastFocus_SectionOne">
             <div class="header">
                 Final list of key issues:
@@ -75,13 +75,83 @@
                 list, and has not yet been posted on the public list.
             </div>
             <div class="makeSuggestion">
-                <textarea id="txtUserSuggestion" name="txtUserSuggestion" style="width: 600px;
-                    height: 30px;"></textarea>
+                <textarea id="txtUserSuggestion" name="txtUserSuggestion" style="width: 600px; height: 40px;"></textarea>
                 <input type="button" value="Submit Suggestion for Discussion" id="btnSubmitSuggestion" />
                 <input type="button" value="I have not Suggestions on this List" id="btnNoSuggestion" />
             </div>
         </div>
         <div class="dFastFocus_SectionContainer dFastFocus_SectionFive">
+            <div class="text">
+                Discussion Board
+            </div>
+            <div class="discussionContainer">
+                <div class="discussionItemContainer">
+                    <div class="discussionItem">
+                        <div class="UserName">
+                        Ali:
+                        </div>
+                        <div class="discussionText">
+                        somethign somethign somethign ...
+                        </div>
+                    </div>
+                     <div class="discussionItem">
+                        <div class="UserName">
+                        Kelly:
+                        </div>
+                        <div class="discussionText">
+                        somethign somethign somethign ...
+                        </div>
+                    </div>
+                     <div class="discussionItem">
+                        <div class="UserName">
+                        Andy:
+                        </div>
+                        <div class="discussionText">
+                        somethign somethign somethign ...
+                        </div>
+                    </div>
+                     <div class="discussionItem">
+                        <div class="UserName">
+                        Maaz:
+                        </div>
+                        <div class="discussionText">
+                        somethign somethign somethign ...
+                        </div>
+                    </div>
+                      <div class="discussionItem">
+                        <div class="UserName">
+                        Ali:
+                        </div>
+                        <div class="discussionText">
+                        somethign somethign somethign ...
+                        </div>
+                    </div>
+                     <div class="discussionItem">
+                        <div class="UserName">
+                        Kelly:
+                        </div>
+                        <div class="discussionText">
+                        somethign somethign somethign ...
+                        </div>
+                    </div>
+                     <div class="discussionItem">
+                        <div class="UserName">
+                        Andy:
+                        </div>
+                        <div class="discussionText">
+                        somethign somethign somethign ...
+                        </div>
+                    </div>
+                     <div class="discussionItem">
+                        <div class="UserName">
+                        Maaz:
+                        </div>
+                        <div class="discussionText">
+                        somethign somethign somethign ...
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="dFastFocus_SectionContainer dFastFocus_SectionSix">
         </div>
