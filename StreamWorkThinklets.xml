@@ -16,10 +16,11 @@ var str = "";
 osapi.people.getViewer({fields: ['name', 'birthday']}).execute(function(result) {
   str += "Your display name is " + result.displayName;
   str += "<br />Your id is " + result.id ;
+$(".dRetrievedInfo").html(str);
 });
 
 
-$(".dRetrievedInfo").html(str);
+
     </script>
    ]]>
   </Content>
