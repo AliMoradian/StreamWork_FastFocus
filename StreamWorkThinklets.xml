@@ -13,18 +13,25 @@
 <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js" type="text/javascript"></script>
 <script>
 var str = "";
-osapi.people.getViewer({fields: ['name', 'birthday']}).execute(function(result) {
-  str += "Your display name is " + result.displayName;
-  str += "<br />Your id is " + result.id ;
+osapi.people.getViewer().execute(function(result) {
+  str += "osapi.people.getViewer display name is " + result.displayName;
+  str += "<br />osapi.people.getViewer id is " + result.id ;
 $(".dRetrievedInfo").html(str);
 });
 
-osapi.people.getOwner({fields: ['name', 'birthday']}).execute(function(result) {
+osapi.people.getOwner().execute(function(result) {
  str = $(".dRetrievedInfo").html();
-  str += "<br/> Activity Owner's display name is " + result.displayName;
-  str += "<br />Activity owner's id is " + result.id ;
+  str += "<br/>osapi.people.getOwner display name is " + result.displayName;
+  str += "<br />osapi.people.getOwner id is " + result.id ;
 $(".dRetrievedInfo").html(str);
 });
+
+osapi.people.getViewerFriends().execute(function(result) {
+ str = $(".dRetrievedInfo").html();
+  str += "<br/> " + result.length();
+$(".dRetrievedInfo").html(str);
+});
+
 
 
 
