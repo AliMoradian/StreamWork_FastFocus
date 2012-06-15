@@ -25,7 +25,6 @@ window.onresize = adjustHeight;
 }
 </script>
 
-
   <div class="dFastFocus_BodyContainer">
         <div class="dFastFocus_SectionContainer dFastFocus_SectionOne">
             <div class="header">
@@ -83,7 +82,8 @@ window.onresize = adjustHeight;
                 list, and has not yet been posted on the public list.
             </div>
             <div class="makeSuggestion">
-                <textarea id="txtUserSuggestion" name="txtUserSuggestion" style="width: 600px; height: 40px;"></textarea>
+                <textarea id="txtUserSuggestion" name="txtUserSuggestion" style="width: 600px; height: 50px;
+                    max-width: 600px; max-height: 50px; min-height: 50px; min-width: 600px;"></textarea>
                 <input type="button" value="Submit Suggestion for Discussion" id="btnSubmitSuggestion" />
                 <input type="button" value="I have not Suggestions on this List" id="btnNoSuggestion" />
             </div>
@@ -96,66 +96,66 @@ window.onresize = adjustHeight;
                 <div class="discussionItemContainer">
                     <div class="discussionItem">
                         <div class="UserName">
-                        Ali:
+                            Ali:
                         </div>
                         <div class="discussionText">
-                        somethign somethign somethign ...
+                            somethign somethign somethign ...
                         </div>
                     </div>
-                     <div class="discussionItem">
+                    <div class="discussionItem">
                         <div class="UserName">
-                        Kelly:
+                            Kelly:
                         </div>
                         <div class="discussionText">
-                        somethign somethign somethign ...
+                            somethign somethign somethign ...
                         </div>
                     </div>
-                     <div class="discussionItem">
+                    <div class="discussionItem">
                         <div class="UserName">
-                        Andy:
+                            Andy:
                         </div>
                         <div class="discussionText">
-                        somethign somethign somethign ...
+                            somethign somethign somethign ...
                         </div>
                     </div>
-                     <div class="discussionItem">
+                    <div class="discussionItem">
                         <div class="UserName">
-                        Maaz:
+                            Maaz:
                         </div>
                         <div class="discussionText">
-                        somethign somethign somethign ...
+                            somethign somethign somethign ...
                         </div>
                     </div>
-                      <div class="discussionItem">
+                    <div class="discussionItem">
                         <div class="UserName">
-                        Ali:
+                            Ali:
                         </div>
                         <div class="discussionText">
-                        somethign somethign somethign ...
+                            somethign somethign somethign ...
                         </div>
                     </div>
-                     <div class="discussionItem">
+                    <div class="discussionItem">
                         <div class="UserName">
-                        Kelly:
+                            Kelly:
                         </div>
                         <div class="discussionText">
-                        somethign somethign somethign ...
+                            somethign somethign somethign ...
                         </div>
                     </div>
-                     <div class="discussionItem">
+                    <div class="discussionItem">
                         <div class="UserName">
-                        Andy:
+                            Andy:
                         </div>
                         <div class="discussionText">
-                        somethign somethign somethign ...
+                            somethign somethign somethign ...
                         </div>
                     </div>
-                     <div class="discussionItem">
+                    <div class="discussionItem">
                         <div class="UserName">
-                        Maaz:
+                            Maaz:
                         </div>
                         <div class="discussionText">
-                        somethign somethign somethign ...
+                            somethign somethign somethign ...
                         </div>
                     </div>
                 </div>
@@ -168,7 +168,6 @@ window.onresize = adjustHeight;
         <div class="dFastFocus_SectionContainer dFastFocus_SectionEight">
         </div>
     </div>
-
 
 
 
