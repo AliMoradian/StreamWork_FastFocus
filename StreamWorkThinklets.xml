@@ -25,7 +25,7 @@
             
                 $.ajax({
                     type: "POST",
-                    url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
+                    url: "http://www.greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
                     data: "{}",
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
@@ -39,6 +39,8 @@
 
             function Error(request, status, error) {
                alert(request.statusText);
+               alert(error);
+               alert(status);
             }
         });
     </script>
