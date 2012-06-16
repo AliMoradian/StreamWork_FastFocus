@@ -28,7 +28,7 @@
                     url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
                     data: "",
                     contentType: "application/json; charset=utf-8",
-                    dataType: "json",
+                    dataType: "jsonp",
                     success: Success,
                     error: Error
                 });
