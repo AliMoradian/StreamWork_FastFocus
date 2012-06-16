@@ -25,7 +25,7 @@
             
                 $.ajax({
                     type: "POST",
-                    url: "http://www.greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
+                    url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
                     data: "{}",
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
