@@ -8,7 +8,7 @@
     <![CDATA[
 
  <link href="https://raw.github.com/abalpeep/StreamWork_FastFocus/master/style.css"   rel="Stylesheet"></link>
- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+ <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 <script>
 
   $(document).ready(function(){
@@ -24,7 +24,7 @@
        $(document).ready(function () {
             
                 $.ajax({
-                    type: "POST",
+                    type: "GET",
                     url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
                     data: "{}",
                     contentType: "application/json; charset=utf-8",
@@ -39,8 +39,6 @@
 
             function Error(request, status, error) {
                alert(request.statusText);
-               alert(error);
-               alert(status);
             }
         });
     </script>
