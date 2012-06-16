@@ -24,9 +24,9 @@
        $(document).ready(function () {
             
                 $.ajax({
-                    type: "POST",
+                    type: "GET",
                     url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
-                    data: "",
+                    data: "{}",
                     contentType: "application/json; charset=utf-8",
                     dataType: "jsonp",
                     success: Success,
