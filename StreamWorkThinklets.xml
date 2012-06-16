@@ -22,33 +22,24 @@
 </script>
 <script>
        $(document).ready(function () {
-            $.ajax({
-                type: "POST",
-                url: "http://greatgtahouses.com/TestContent/StreamWork.aspx/getContent",
-                data: "{}",
-                contentType: "application/json;charset=utf-8",
-                dataType: "json",
-                success: function (msg) {
-                    alert("1-success "+msg.d);
-                },
-                error: function (result) {
-                    alert("1-Fail");
-                }
-            });
+            
+                $.ajax({
+                    type: "POST",
+                    url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
+                    data: "{}",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: Success,
+                    error: Error
+                });
 
-            $.ajax({
-                type: "POST",
-                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
-                data: "{}",
-                contentType: "application/json;charset=utf-8",
-                dataType: "json",
-                success: function (msg) {
-                    alert("2-success " + msg.d);
-                },
-                error: function (result) {
-                    alert("2-Fail");
-                }
-            });
+            function Success(data, status) {
+               alert(data.d);
+            }
+
+            function Error(request, status, error) {
+               alert(request.statusText);
+            }
         });
     </script>
 
