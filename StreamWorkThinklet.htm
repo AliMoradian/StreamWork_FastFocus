@@ -9,15 +9,13 @@
         $(document).ready(function () {
             $.ajax({
                 type: "POST",
-                url: "http://greatgtahouses.com/Testcontent/Streamwork.aspx/getContent",
+                url: "http://greatgtahouses.com/TestContent/StreamWork.aspx/getContent",
                 data: "{}",
-                contentType: "application/json",
-                charset: "utf-8",
+                contentType: "application/json; charset=utf-8",
                 dataType: "json",
-                async: true,
-                cache: false,
-                success: function (msg) { alert(msg.d); },
-                error: function (x, e) { alert("The call to the server side failed. " + x.responseText); }
+                success: function (msg) {
+                    alert("heyy");
+                }                
             });
         });
     </script>
