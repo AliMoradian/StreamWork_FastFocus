@@ -21,20 +21,32 @@
   });
 </script>
 <script>
-        $(document).ready(function () {
+       $(document).ready(function () {
             $.ajax({
                 type: "POST",
                 url: "http://greatgtahouses.com/TestContent/StreamWork.aspx/getContent",
-                data: "{name:'ali',email:'email',phone:'phone',userMessage:'msg'}",
+                data: "{}",
                 contentType: "application/json;charset=utf-8",
                 dataType: "json",
                 success: function (msg) {
-                    alert(msg.d);
+                    alert("1-success "+msg.d);
                 },
                 error: function (result) {
-                    alert("error occured. Status:" +
-                    result.status + ' --Status Text:' +
-                    result.statusText + " --Error Result:" + result);
+                    alert("1-Fail");
+                }
+            });
+
+            $.ajax({
+                type: "POST",
+                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
+                data: "{}",
+                contentType: "application/json;charset=utf-8",
+                dataType: "json",
+                success: function (msg) {
+                    alert("1-success " + msg.d);
+                },
+                error: function (result) {
+                    alert("1-Fail");
                 }
             });
         });
