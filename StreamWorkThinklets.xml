@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="FastFocus"  width="1500">
+  <ModulePrefs title="FastFocus"  width="2000">
     <Require feature="dynamic-height"/>
     <Require feature="osapi"  />
   </ModulePrefs>
