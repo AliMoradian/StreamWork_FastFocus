@@ -10,19 +10,14 @@
  <link href="https://raw.github.com/abalpeep/StreamWork_FastFocus/master/style.css"   rel="Stylesheet"></link>
  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <script>
-window.onresize = adjustHeight;
 
   $(document).ready(function(){
-    adjustHeight();
+  
     $(".KeyIssue").hover(
       function(){$(this).css("background","#ececec");},
       function(){$(this).css("background","white");});
   
   });
-  
-  function adjustHeight() {
-   gadgets.window.adjustHeight();
-}
 </script>
 
   <div class="dFastFocus_BodyContainer">
