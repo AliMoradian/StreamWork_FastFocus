@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="FastFocus"  height="2000">
+  <ModulePrefs title="FastFocus"  >
     <Require feature="osapi"  />
+    <Require feature="dynamic-height"/>
   </ModulePrefs>
   <Content type="html">
     <![CDATA[
@@ -16,6 +17,7 @@
       function(){$(this).css("background","#ececec");},
       function(){$(this).css("background","white");});
   
+  gadgets.window.adjustHeight();
   });
 </script>
 
