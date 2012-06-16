@@ -10,12 +10,17 @@
             $.ajax({
                 type: "POST",
                 url: "http://greatgtahouses.com/TestContent/StreamWork.aspx/getContent",
-                data: "{}",
-                contentType: "application/json; charset=utf-8",
+                data: "{name:'ali',email:'email',phone:'phone',userMessage:'msg'}",
+                contentType: "application/json;charset=utf-8",
                 dataType: "json",
                 success: function (msg) {
-                    alert("heyy");
-                }                
+                    alert(msg.d);
+                },
+                error: function (result) {
+                    alert("error occured. Status:" +
+                    result.status + ' --Status Text:' +
+                    result.statusText + " --Error Result:" + result);
+                }
             });
         });
     </script>
