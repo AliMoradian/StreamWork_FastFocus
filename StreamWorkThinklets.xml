@@ -33,6 +33,7 @@
 function response(obj) {
   //obj.data contains a JavaScript object corresponding to the data that was requested
   alert(obj.data);
+  alert(obj.text);
 };
 
 makeJSONRequest();
