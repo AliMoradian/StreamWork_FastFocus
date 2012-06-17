@@ -26,12 +26,12 @@
            function makeJSONRequest() {
   var params = {};
   params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;
-  var url = "http://graargh.returnstrue.com/buh/makerequest.php";
+  var url = "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld";
+
   gadgets.io.makeRequest(url, response, params);
   
   
-  //var url = "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld";
-
+  
 };
 
 function response(obj) {
