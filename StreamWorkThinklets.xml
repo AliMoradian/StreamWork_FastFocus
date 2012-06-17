@@ -27,7 +27,7 @@
                     type: "POST",
                     url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
                     data: "",
-                    dataType: "json",
+                    dataType: "jsonp",
                     crossDomain:true,
                     success: Success,
                     error: Error
