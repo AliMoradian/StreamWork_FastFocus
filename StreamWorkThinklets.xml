@@ -24,11 +24,11 @@
        $(document).ready(function () {
             
                 $.ajax({
-                    type: "POST",
+                    type: "GET",
                     url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
                     data: "",
                     dataType: "json",
-                    crossDomain:"true",
+                    crossDomain:true,
                     success: success: function (data, status) {alert("Passed 1 "+ data.d); },
                     error: function Error(request, status, error) {alert("Failed 1 " + request.statusText);}
                 });
