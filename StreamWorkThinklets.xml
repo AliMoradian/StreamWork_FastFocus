@@ -23,23 +23,19 @@
 <script>
        $(document).ready(function () {
             
-            alert("1");
-               
-var req = $.ajax({
-    url : "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
-    dataType : "jsonp",
-    timeout : 10000
-});
+           function makeJSONRequest() {
+  var params = {};
+  params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.JSON;
+  var url = "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld";
+  gadgets.io.makeRequest(url, response, params);
+};
 
-req.success(function() {
-    alert('Yes! Success!');
-});
+function response(obj) {
+  //obj.data contains a JavaScript object corresponding to the data that was requested
+  alert(obj.data);
+};
 
-req.error(function() {
-    alert('Oh noes!');
-});
-         
-           
+makeJSONRequest();
             
              alert("2");
         });
