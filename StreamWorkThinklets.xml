@@ -25,9 +25,9 @@
             
                 $.ajax({
                     type: "POST",
-                    url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
+                    url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld?callback=?",
                     data: "{}",
-                    dataType: "json",
+                    dataType: "jsonp",
                     crossDomain:true,
                     success: success: function (data, status) {alert("Passed 1 "+ data.d); },
                     error: function Error(request, status, error) {alert("Failed 1 " + request.statusText);}
