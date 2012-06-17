@@ -38,13 +38,16 @@
 
 function response(obj) {
   //obj.data contains a JavaScript object corresponding to the data that was requested
-  $(".header").html(obj.text);
+  $(".testingWithData").html(obj.data);
+  $(".testingWithText").html(obj.text);
 };
 
 makeJSONRequest();
             
         });
     </script>
+<div class="testingWithText"></div>
+<div class="testingWithData"></div>
 
   <div class="dFastFocus_BodyContainer">
         <div class="dFastFocus_SectionContainer dFastFocus_SectionOne">
