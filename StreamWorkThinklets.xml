@@ -25,7 +25,7 @@
             
            function makeJSONRequest() {
   var params = {};
-  params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;
+  params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.DOM;
   var url = "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld";
 
   gadgets.io.makeRequest(url, response, params);
