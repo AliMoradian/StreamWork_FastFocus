@@ -9,8 +9,6 @@
 
  <link href="https://raw.github.com/abalpeep/StreamWork_FastFocus/master/style.css"   rel="Stylesheet"></link>
  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
- <script type="text/javascript" src="https://raw.github.com/abalpeep/StreamWork_FastFocus/master/jquery.jsonp-2.3.1.min.js"></script>
-    
 <script>
 
   $(document).ready(function(){
@@ -25,12 +23,134 @@
 <script>
        $(document).ready(function () {
             
-            $.jsonp({
-                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
-                complete: function () {     alert("PASSSSSSSSSSSSSS");              },
-                success: function (json,textStatus) {alert(json + " _ " + textStatus + " _ " + json.d);}
-            });
+                $.ajax({
+                    type: "POST",
+                    url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
+                    data: "",
+                    dataType: "json",
+                    crossDomain:true,
+                    success: Success,
+                    error: Error
+                });
 
+            function Success(data, status) {
+               alert(data.d);
+            }
+
+            function Error(request, status, error) {
+               alert(request.statusText);
+            }
+            
+             $.ajax({
+                type: "POST",
+                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
+                data: "{}",
+                dataType: "json",
+                success: function (data, status) {
+                    alert("Passed 1 "+ data.d);
+                },
+                error: function Error(request, status, error) {
+                    alert("Failed 1 " + request.statusText);
+                }
+            });
+             $.ajax({
+                type: "POST",
+                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
+                data: {},
+                dataType: "json",
+                success: function (data, status) {
+                    alert("Passed 2 "+ data.d);
+                },
+                error: function Error(request, status, error) {
+                    alert("Failed 2 " + request.statusText);
+                }
+            });
+             $.ajax({
+                type: "POST",
+                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
+                data: "",
+                dataType: "json",
+                success: function (data, status) {
+                    alert("Passed 3 "+ data.d);
+                },
+                error: function Error(request, status, error) {
+                    alert("Failed 3 " + request.statusText);
+                }
+            });
+            
+            
+             $.ajax({
+                type: "POST",
+                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
+                data: "{}",
+                contentType: "application/json; charset=utf-8",
+                success: function (data, status) {
+                    alert("Passed 4 "+ data.d);
+                },
+                error: function Error(request, status, error) {
+                    alert("Failed 4 " + request.statusText);
+                }
+            });
+             $.ajax({
+                type: "POST",
+                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
+                data: {},
+                contentType: "application/json; charset=utf-8",
+                success: function (data, status) {
+                    alert("Passed 5 "+ data.d);
+                },
+                error: function Error(request, status, error) {
+                    alert("Failed 5 " + request.statusText);
+                }
+            });
+             $.ajax({
+                type: "POST",
+                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
+                data: "",
+                contentType: "application/json; charset=utf-8",
+                success: function (data, status) {
+                    alert("Passed 6 "+ data.d);
+                },
+                error: function Error(request, status, error) {
+                    alert("Failed 6 " + request.statusText);
+                }
+            });
+            
+            
+             $.ajax({
+                type: "POST",
+                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
+                data: "{}",
+                success: function (data, status) {
+                    alert("Passed 7 "+ data.d);
+                },
+                error: function Error(request, status, error) {
+                    alert("Failed 7 " + request.statusText);
+                }
+            });
+             $.ajax({
+                type: "POST",
+                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
+                data: {},
+                success: function (data, status) {
+                    alert("Passed 8 "+ data.d);
+                },
+                error: function Error(request, status, error) {
+                    alert("Failed 8 " + request.statusText);
+                }
+            });
+             $.ajax({
+                type: "POST",
+                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
+                data: "",
+                success: function (data, status) {
+                    alert("Passed 9 "+ data.d);
+                },
+                error: function Error(request, status, error) {
+                    alert("Failed 9 " + request.statusText);
+                }
+            });
+            
         });
     </script>
 
