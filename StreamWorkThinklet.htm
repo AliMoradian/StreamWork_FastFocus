@@ -17,6 +17,12 @@
                 success: function (data, status) { alert("Passed 1 " + data.d); },
                 error: function Error(request, status, error) { alert("Failed 1 " + request.statusText); }
             });
+
+
+            $.get("http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld?callback=?",
+            function (jsonp) {
+                alert("eh ...");
+            });
         });
     </script>
     <div class="dFastFocus_BodyContainer">

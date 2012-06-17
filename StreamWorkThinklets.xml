@@ -25,12 +25,21 @@
             
             alert("1");
                
+var req = $.ajax({
+    url : "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld?callback=?",
+    dataType : "jsonp",
+    timeout : 10000
+});
 
+req.success(function() {
+    alert('Yes! Success!');
+});
+
+req.error(function() {
+    alert('Oh noes!');
+});
          
-            $.get("http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld?callback=?", 
-            function(jsonp) {
-        alert("eh ...");
-    });
+           
             
              alert("2");
         });
