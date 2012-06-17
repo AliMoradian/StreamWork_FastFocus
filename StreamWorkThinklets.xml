@@ -35,7 +35,9 @@
                 });
 
           alert("2");
-            
+            $.get("http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld?callback=?", function(data) {
+        alert("eh ...");
+    });
             
             
         });
