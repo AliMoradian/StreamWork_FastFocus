@@ -26,9 +26,9 @@
            function makeJSONRequest() {
   var params = {};
   
-  params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;
+  //params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;
   //params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.JSON;
-  //params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.DOM;
+  params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.DOM;
   
   var url = "http://greatgtahouses.com/TestContent/StreamWork2.aspx";
   gadgets.io.makeRequest(url, response, params);
