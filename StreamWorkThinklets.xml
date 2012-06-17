@@ -38,7 +38,7 @@
 
 function response(obj) {
   //obj.data contains a JavaScript object corresponding to the data that was requested
-  $(".testingWithData").html(obj.data);
+  //$(".testingWithData").html(obj.data);
   $(".testingWithText").html(obj.text);
 };
 
