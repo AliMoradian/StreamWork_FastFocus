@@ -23,15 +23,17 @@
 <script>
        $(document).ready(function () {
             
+            alert("1");
                 $.ajax({
+                    type: "POST",
                     url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld?callback=?",
-                   
-                    dataType: "jsonp",
+                    data: "{}",
+                    dataType: "json",
                     success: success: function (data, status) {alert("Passed 1 "+ data.d); },
                     error: function Error(request, status, error) {alert("Failed 1 " + request.statusText);}
                 });
 
-          
+          alert("2");
             
             
             
