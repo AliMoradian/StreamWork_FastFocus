@@ -39,6 +39,47 @@
             function Error(request, status, error) {
                alert(request.statusText);
             }
+            
+             $.ajax({
+                type: "POST",
+                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
+                data: "{}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data, status) {
+                    alert("Passed 1 "+ data.d);
+                },
+                error: function Error(request, status, error) {
+                    alert("Failed 1 " + request.statusText);
+                }
+            });
+             $.ajax({
+                type: "POST",
+                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
+                data: {},
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data, status) {
+                    alert("Passed 2 "+ data.d);
+                },
+                error: function Error(request, status, error) {
+                    alert("Failed 2 " + request.statusText);
+                }
+            });
+             $.ajax({
+                type: "POST",
+                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
+                data: "",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data, status) {
+                    alert("Passed 3 "+ data.d);
+                },
+                error: function Error(request, status, error) {
+                    alert("Failed 3 " + request.statusText);
+                }
+            });
+            
         });
     </script>
 
