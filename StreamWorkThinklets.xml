@@ -27,7 +27,7 @@
                     type: "POST",
                     url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
                     data: "",
-                    dataType: "jsonp",
+                    dataType: "json",
                     success: Success,
                     error: Error
                 });
