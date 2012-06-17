@@ -27,32 +27,14 @@
                     type: "POST",
                     url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
                     data: "",
-                    dataType: "jsonp",
+                    dataType: "json",
                     crossDomain:"true",
-                    success: Success,
-                    error: Error
+                    success: success: function (data, status) {alert("Passed 1 "+ data.d); },
+                    error: function Error(request, status, error) {alert("Failed 1 " + request.statusText);}
                 });
 
-            function Success(data, status) {
-               alert("1- ... " + data.d);
-            }
-
-            function Error(request, status, error) {
-               alert("2- ..." + request.statusText);
-            }
+          
             
-             $.ajax({
-                type: "POST",
-                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
-                data: "{}",
-                dataType: "json",
-                success: function (data, status) {
-                    alert("Passed 1 "+ data.d);
-                },
-                error: function Error(request, status, error) {
-                    alert("Failed 1 " + request.statusText);
-                }
-            });
             
             
         });
