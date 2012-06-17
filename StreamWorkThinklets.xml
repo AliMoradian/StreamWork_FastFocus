@@ -30,13 +30,13 @@
   //params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.JSON;
   //params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.DOM;
   
-  var url = "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld";
+  var url = "http://greatgtahouses.com/TestContent/StreamWork.asmx";
   gadgets.io.makeRequest(url, response, params);
   
   //var postdata = {};
   //params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
  // params[gadgets.io.RequestParameters.POST_DATA] = gadgets.io.encodeValues(postdata);
- // var url = "http://greatgtahouses.com/TestContent/StreamWork.asmx";
+ // var url = "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld";
  // gadgets.io.makeRequest(url, response, params);
   
 };
