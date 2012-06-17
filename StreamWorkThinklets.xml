@@ -26,7 +26,7 @@
             alert("1");
                
 var req = $.ajax({
-    url : "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld?callback=?",
+    url : "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
     dataType : "jsonp",
     timeout : 10000
 });
