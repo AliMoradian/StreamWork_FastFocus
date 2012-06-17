@@ -41,7 +41,7 @@
                alert("2- ..." + request.statusText);
             }
             
-             <!--$.ajax({
+             $.ajax({
                 type: "POST",
                 url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
                 data: "{}",
@@ -53,103 +53,7 @@
                     alert("Failed 1 " + request.statusText);
                 }
             });
-             $.ajax({
-                type: "POST",
-                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
-                data: {},
-                dataType: "json",
-                success: function (data, status) {
-                    alert("Passed 2 "+ data.d);
-                },
-                error: function Error(request, status, error) {
-                    alert("Failed 2 " + request.statusText);
-                }
-            });
-             $.ajax({
-                type: "POST",
-                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
-                data: "",
-                dataType: "json",
-                success: function (data, status) {
-                    alert("Passed 3 "+ data.d);
-                },
-                error: function Error(request, status, error) {
-                    alert("Failed 3 " + request.statusText);
-                }
-            });
             
-            
-             $.ajax({
-                type: "POST",
-                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
-                data: "{}",
-                contentType: "application/json; charset=utf-8",
-                success: function (data, status) {
-                    alert("Passed 4 "+ data.d);
-                },
-                error: function Error(request, status, error) {
-                    alert("Failed 4 " + request.statusText);
-                }
-            });
-             $.ajax({
-                type: "POST",
-                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
-                data: {},
-                contentType: "application/json; charset=utf-8",
-                success: function (data, status) {
-                    alert("Passed 5 "+ data.d);
-                },
-                error: function Error(request, status, error) {
-                    alert("Failed 5 " + request.statusText);
-                }
-            });
-             $.ajax({
-                type: "POST",
-                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
-                data: "",
-                contentType: "application/json; charset=utf-8",
-                success: function (data, status) {
-                    alert("Passed 6 "+ data.d);
-                },
-                error: function Error(request, status, error) {
-                    alert("Failed 6 " + request.statusText);
-                }
-            });
-            
-            
-             $.ajax({
-                type: "POST",
-                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
-                data: "{}",
-                success: function (data, status) {
-                    alert("Passed 7 "+ data.d);
-                },
-                error: function Error(request, status, error) {
-                    alert("Failed 7 " + request.statusText);
-                }
-            });
-             $.ajax({
-                type: "POST",
-                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
-                data: {},
-                success: function (data, status) {
-                    alert("Passed 8 "+ data.d);
-                },
-                error: function Error(request, status, error) {
-                    alert("Failed 8 " + request.statusText);
-                }
-            });
-             $.ajax({
-                type: "POST",
-                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
-                data: "",
-                success: function (data, status) {
-                    alert("Passed 9 "+ data.d);
-                },
-                error: function Error(request, status, error) {
-                    alert("Failed 9 " + request.statusText);
-                }
-            });-->
             
         });
     </script>
