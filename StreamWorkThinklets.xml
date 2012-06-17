@@ -28,7 +28,7 @@
                     url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
                     data: "",
                     dataType: "jsonp",
-                    crossDomain:true,
+                    crossDomain:"true",
                     success: Success,
                     error: Error
                 });
