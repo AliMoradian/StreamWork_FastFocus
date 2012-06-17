@@ -28,7 +28,7 @@
             $.jsonp({
                 url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
                 complete: function () {     alert("PASSSSSSSSSSSSSS");              },
-                success: function (json,textStatus) {alert(json + " _ " + textStatus + " _ " + json.d);};
+                success: function (json,textStatus) {alert(json + " _ " + textStatus + " _ " + json.d);}
             });
 
         });
