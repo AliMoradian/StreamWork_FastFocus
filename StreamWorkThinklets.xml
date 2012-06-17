@@ -34,11 +34,11 @@
                 });
 
             function Success(data, status) {
-               alert(data.d);
+               alert("1- ... " + data.d);
             }
 
             function Error(request, status, error) {
-               alert(request.statusText);
+               alert("2- ..." + request.statusText);
             }
             
              $.ajax({
