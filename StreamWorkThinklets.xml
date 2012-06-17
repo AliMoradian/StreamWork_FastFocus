@@ -41,7 +41,7 @@
                alert("2- ..." + request.statusText);
             }
             
-             $.ajax({
+             <!--$.ajax({
                 type: "POST",
                 url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
                 data: "{}",
@@ -149,7 +149,7 @@
                 error: function Error(request, status, error) {
                     alert("Failed 9 " + request.statusText);
                 }
-            });
+            });-->
             
         });
     </script>
