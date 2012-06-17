@@ -24,22 +24,14 @@
        $(document).ready(function () {
             
             alert("1");
-                $.ajax({
-                    type: "POST",
-                    url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld?callback=?",
-                    data: "{}",
-                    dataType: "json",
-                    jsonp: false,
-                    success:  function (data, status) {alert("Passed 1 "+ data.d); },
-                    error: function Error(request, status, error) {alert("Failed 1 " + request.statusText);}
-                });
+               
 
-          alert("2");
-            $.get("http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld?callback=?", function(data) {
+         
+            $.getJSON("http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld?callback=?", function(data) {
         alert("eh ...");
     });
             
-            
+             alert("2");
         });
     </script>
 
