@@ -27,7 +27,8 @@
                
 
          
-            $.get("http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld?callback=?", function(data) {
+            $.get("http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld?callback=?", 
+            function(jsonp) {
         alert("eh ...");
     });
             
