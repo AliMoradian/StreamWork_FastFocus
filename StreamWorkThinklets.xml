@@ -27,7 +27,7 @@
                     type: "POST",
                     url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
                     data: "",
-                    dataType: "json",
+                    dataType: "jsonp",
                     success: Success,
                     error: Error
                 });
@@ -44,7 +44,7 @@
                 type: "POST",
                 url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
                 data: "{}",
-                dataType: "json",
+                dataType: "jsonp",
                 success: function (data, status) {
                     alert("Passed 1 "+ data.d);
                 },
@@ -56,7 +56,7 @@
                 type: "POST",
                 url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
                 data: {},
-                dataType: "json",
+                dataType: "jsonp",
                 success: function (data, status) {
                     alert("Passed 2 "+ data.d);
                 },
@@ -68,7 +68,7 @@
                 type: "POST",
                 url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld",
                 data: "",
-                dataType: "json",
+                dataType: "jsonp",
                 success: function (data, status) {
                     alert("Passed 3 "+ data.d);
                 },
