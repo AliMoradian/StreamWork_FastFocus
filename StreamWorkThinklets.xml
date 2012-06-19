@@ -20,7 +20,7 @@
   gadgets.window.adjustHeight();
   });
 </script>
-<script>
+<script> 
        $(document).ready(function () {
             
            function makeJSONRequest() {
