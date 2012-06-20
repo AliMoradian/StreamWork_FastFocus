@@ -5,6 +5,9 @@
         rel="Stylesheet"></link>
 </head>
 <body>
+<link href="https://raw.github.com/abalpeep/StreamWork_FastFocus/master/style.css"   rel="Stylesheet"></link>
+ <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
    <script type="text/javascript">
        var params = {};
        params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;
@@ -42,7 +45,9 @@
        });
 
        function LoadFirstTimeData() {
-           var url2 = url + "action=firsttimedata&userID=" + encodeURIComponent(userID) + "&userName=" + encodeURIComponent(userName) + "&ownerID=" + encodeURIComponent(ownerID) + "&ownerName=" + encodeURIComponent(ownerName);
+           var url2 = url + "action=firsttimedata&userID=" + encodeURIComponent(userID) +
+                            "&userName=" + encodeURIComponent(userName) + "&ownerID=" + encodeURIComponent(ownerID) + 
+                            "&ownerName=" + encodeURIComponent(ownerName) + "&randomizer=" + randomNumber();
            $(".showMessages").html(url2);
            gadgets.io.makeRequest(url2, response_LoadFirstTimeData, params);
        };
@@ -51,6 +56,13 @@
            gadgets.window.adjustHeight();
        };
 
+       function randomNumber() {
+           var text = "";
+           var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+           for (var i = 0; i < 5; i++)
+               text += possible.charAt(Math.floor(Math.random() * possible.length));
+           return text;
+       }
     </script>
 <div class="testingWithText">Loading first time data. Please waite ...</div>
 <div class="testingWithData"></div>
