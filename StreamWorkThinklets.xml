@@ -9,42 +9,51 @@
 
  <link href="https://raw.github.com/abalpeep/StreamWork_FastFocus/master/style.css"   rel="Stylesheet"></link>
  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-<script>
+ <script type="text/javascript">
+        var params = {};
+        params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;
+        var url = "http://greatgtahouses.com/TestContent/StreamWork2.aspx?";
 
-  $(document).ready(function(){
-  
-    $(".KeyIssue").hover(
-      function(){$(this).css("background","#ececec");},
-      function(){$(this).css("background","white");});
-  
-  gadgets.window.adjustHeight();
-  });
-</script>
-<script> 
-       $(document).ready(function () {
-            
-           function makeJSONRequest() {
-  var params = {};
-  
-  //params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;
-  //params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.JSON;
-  params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.DOM;
-  
-  var url = "http://greatgtahouses.com/TestContent/StreamWork2.aspx?ali=eddskkfsd";
-  gadgets.io.makeRequest(url, response, params);
-  
- 
-};
-
-function response(obj) {
-  //obj.data contains a JavaScript object corresponding to the data that was requested
-  //$(".testingWithData").html(obj.data);
-  $(".testingWithText").html(obj.text + " -->ddd<--");
-};
-
-makeJSONRequest();
-            
+        var userID = "";
+        var userName = "";
+        var ownerID = "";
+        var ownerName = "";
+        osapi.people.getViewer().execute(function (result) {
+            if (result.error) {
+                alert("Could not get viewer information. Please concact system administrator. Error details: " + result.error.message);
+            }
+            else {
+                userName = result.displayName;
+                userID = result.id;
+            }
         });
+        osapi.people.getOwner().execute(function (result) {
+            if (result.error) {
+                alert("Could not get owner information. Please concact system administrator. Error details: " + result.error.message);
+            }
+            else {
+                ownerName = result.displayName;
+                ownerID = result.id;
+            }
+        });
+
+        $(document).ready(function () {
+            makeJSONRequest();
+
+            $(".KeyIssue").hover(
+                 function () { $(this).css("background", "#ececec"); },
+                 function () { $(this).css("background", "white"); });
+        });
+
+        function LoadFirstTimeData() {
+            var url2 = url + "action=firsttimedata&userID="+userID+"&userName="+userName+"&ownerID="+ownerID+"&ownerName="+ownerName;
+            gadgets.io.makeRequest(url, response_LoadFirstTimeData, params);
+        };
+        function response_LoadFirstTimeData(obj) {
+            $(".testingWithText").html(obj.text);
+            gadgets.window.adjustHeight();
+        };
+
     </script>
 <div class="testingWithText"></div>
 <div class="testingWithData"></div>

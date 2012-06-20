@@ -5,25 +5,51 @@
         rel="Stylesheet"></link>
 </head>
 <body>
-    <script>
-        $(document).ready(function () {
+    <script type="text/javascript">
+        var params = {};
+        params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;
+        var url = "http://greatgtahouses.com/TestContent/StreamWork2.aspx?";
 
-            $.ajax({
-                type: "POST",
-                url: "http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld?callback=?",
-                data: "{}",
-                dataType: "json",
-                jsonp: false,
-                success: function (data, status) { alert("Passed 1 " + data.d); },
-                error: function Error(request, status, error) { alert("Failed 1 " + request.statusText); }
-            });
-
-
-            $.get("http://greatgtahouses.com/TestContent/StreamWork.asmx/HelloWorld?callback=?",
-            function (jsonp) {
-                alert("eh ...");
-            });
+        var userID = "";
+        var userName = "";
+        var ownerID = "";
+        var ownerName = "";
+        osapi.people.getViewer().execute(function (result) {
+            if (result.error) {
+                alert("Could not get viewer information. Please concact system administrator. Error details: " + result.error.message);
+            }
+            else {
+                userName = result.displayName;
+                userID = result.id;
+            }
         });
+        osapi.people.getOwner().execute(function (result) {
+            if (result.error) {
+                alert("Could not get owner information. Please concact system administrator. Error details: " + result.error.message);
+            }
+            else {
+                ownerName = result.displayName;
+                ownerID = result.id;
+            }
+        });
+
+        $(document).ready(function () {
+            makeJSONRequest();
+
+            $(".KeyIssue").hover(
+                 function () { $(this).css("background", "#ececec"); },
+                 function () { $(this).css("background", "white"); });
+        });
+
+        function LoadFirstTimeData() {
+            var url2 = url + "action=firsttimedata&userID="+userID+"&userName="+userName+"&ownerID="+ownerID+"&ownerName="+ownerName;
+            gadgets.io.makeRequest(url, response_LoadFirstTimeData, params);
+        };
+        function response_LoadFirstTimeData(obj) {
+            $(".testingWithText").html(obj.text);
+            gadgets.window.adjustHeight();
+        };
+
     </script>
     <div class="dFastFocus_BodyContainer">
         <div class="dFastFocus_SectionContainer dFastFocus_SectionOne">
