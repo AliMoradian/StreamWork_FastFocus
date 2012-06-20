@@ -44,7 +44,7 @@
         });
 
         function LoadFirstTimeData() {
-            var url2 = url + "action=firsttimedata&userID=" + userID + "&userName=" + userName + "&ownerID=" + ownerID + "&ownerName=" + ownerName;
+            var url2 = url + "action=firsttimedata&userID=" + encodeURIComponent(userID) + "&userName=" + encodeURIComponent(userName) + "&ownerID=" + encodeURIComponent(ownerID) + "&ownerName=" + encodeURIComponent(ownerName);
             alert(url2);
             gadgets.io.makeRequest(url2, response_LoadFirstTimeData, params);
         };
