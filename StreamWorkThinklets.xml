@@ -25,21 +25,21 @@
             else {
                 userName = result.displayName;
                 userID = result.id;
+                osapi.people.getOwner().execute(function (result) {
+                    if (result.error) {
+                        alert("Could not get owner information. Please concact system administrator. Error details: " + result.error.message);
+                    }
+                    else {
+                        ownerName = result.displayName;
+                        ownerID = result.id;
+                        LoadFirstTimeData();
+                    }
+                });
             }
         });
-        osapi.people.getOwner().execute(function (result) {
-            if (result.error) {
-                alert("Could not get owner information. Please concact system administrator. Error details: " + result.error.message);
-            }
-            else {
-                ownerName = result.displayName;
-                ownerID = result.id;
-            }
-        });
+        
 
         $(document).ready(function () {
-            LoadFirstTimeData();
-
             $(".KeyIssue").hover(
                  function () { $(this).css("background", "#ececec"); },
                  function () { $(this).css("background", "white"); });
