@@ -46,7 +46,7 @@
         });
 
         function LoadFirstTimeData() {
-            var url2 = url + "action=firsttimedata&userID="+encodeURIComponent(userID)+"&userName="+encodeURIComponent(userName)+"&ownerID="+encodeURIComponent(ownerID)+"&ownerName="+encodeURIComponent(ownerName);
+            var url2 = url + "action=firsttimedata&userID="+encodeURIComponent(userID)+"&userName="+encodeURIComponent(userName)+"&ownerID="+encodeURIComponent(ownerID)+"&ownerName="+encodeURIComponent(ownerName)+"&ali=hassan";
             $(".showMessages").html(url2);
             gadgets.io.makeRequest(url2, response_LoadFirstTimeData, params);
         };
