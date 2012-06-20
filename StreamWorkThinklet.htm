@@ -43,6 +43,7 @@
 
         function LoadFirstTimeData() {
             var url2 = url + "action=firsttimedata&userID=" + userID + "&userName=" + userName + "&ownerID=" + ownerID + "&ownerName=" + ownerName;
+            alert(url2);
             gadgets.io.makeRequest(url2, response_LoadFirstTimeData, params);
         };
         function response_LoadFirstTimeData(obj) {
