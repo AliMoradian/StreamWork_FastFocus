@@ -10,66 +10,7 @@
  <link href="https://raw.github.com/abalpeep/StreamWork_FastFocus/master/style.css"   rel="Stylesheet"></link>
  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 
-   <script type="text/javascript">
-       var params = {};
-       params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;
-       var url = "http://greatgtahouses.com/TestContent/StreamWork2.aspx?";
-
-       var userID = "";
-       var userName = "";
-       var ownerID = "";
-       var ownerName = "";
-       osapi.people.getViewer().execute(function (result) {
-           if (result.error) {
-               alert("Could not get viewer information. Please concact system administrator. Error details: " + result.error.message);
-           }
-           else {
-               userName = result.displayName;
-               userID = result.id;
-               osapi.people.getOwner().execute(function (result) {
-                   if (result.error) {
-                       alert("Could not get owner information. Please concact system administrator. Error details: " + result.error.message);
-                   }
-                   else {
-                       ownerName = result.displayName;
-                       ownerID = result.id;
-                       LoadFirstTimeData();
-                   }
-               });
-           }
-       });
-
-
-       $(document).ready(function () {
-           $(".KeyIssue").hover(
-                 function () { $(this).css("background", "#ececec"); },
-                 function () { $(this).css("background", "white"); });
-       });
-
-       function LoadFirstTimeData() {
-           var url2 = url + "action=firsttimedata&userID=" + encodeURIComponent(userID) +
-                            "&userName=" + encodeURIComponent(userName) + "&ownerID=" + encodeURIComponent(ownerID) + 
-                            "&ownerName=" + encodeURIComponent(ownerName) + "&randomizer=" + randomNumber();
-           gadgets.io.makeRequest(url2, response_LoadFirstTimeData, params);
-       };
-       function response_LoadFirstTimeData(obj) {
-           $(".testingWithText").html(obj.text);
-           gadgets.window.adjustHeight();
-       };
-
-       function randomNumber() {
-           var text = "";
-           var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-           for (var i = 0; i < 5; i++)
-               text += possible.charAt(Math.floor(Math.random() * possible.length));
-           return text;
-       }
-    </script>
-<div class="testingWithText">Loading first time data. Please waite ...</div>
-<div class="testingWithData"></div>
-<div class="showMessages" style="color:green"></div>
-
-<br />
+ 
   <div class="dFastFocus_BodyContainer">
         <div class="dFastFocus_SectionContainer dFastFocus_SectionOne">
             <div class="header">
