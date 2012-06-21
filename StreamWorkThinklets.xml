@@ -67,7 +67,7 @@
     </script>
 <div class="testingWithText">Loading first time data. Please waite ...</div>
 <div class="testingWithData"></div>
-<div class="showMessages" style="color:green"></div>
+<div class="showMessages" style="color:green;margin-bottom:50px;"></div>
 
 
   <div class="dFastFocus_BodyContainer">
