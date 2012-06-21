@@ -283,7 +283,7 @@ $(".dRetrievedInfo").html(str);
 
     </script>
     
-    
+    <style>
     
     .dError
 {
@@ -424,6 +424,8 @@ $(".dRetrievedInfo").html(str);
 .dFastFocus_SectionEight
 {
 }
+
+</style>
 
    ]]>
   </Content>
