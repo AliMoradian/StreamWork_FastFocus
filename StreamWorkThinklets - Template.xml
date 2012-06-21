@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="FastFocus"  >
+    <Require feature="osapi"  />
+    <Require feature="dynamic-height"/>
+  </ModulePrefs>
+  <Content type="html">
+    <![CDATA[
+ 
+<link href="https://raw.github.com/abalpeep/StreamWork_FastFocus/master/style.css"   rel="Stylesheet"></link>
+ <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+  
+
+<div class="dError" >This is a test ...</div> 
+   ]]>
+  </Content>
+</Module>
