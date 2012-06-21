@@ -50,7 +50,6 @@
            var url2 = url + "action=firsttimedata&userID=" + encodeURIComponent(userID) +
                             "&userName=" + encodeURIComponent(userName) + "&ownerID=" + encodeURIComponent(ownerID) + 
                             "&ownerName=" + encodeURIComponent(ownerName) + "&randomizer=" + randomNumber();
-          // $(".showMessages").html(url2);
            gadgets.io.makeRequest(url2, response_LoadFirstTimeData, params);
        };
        function response_LoadFirstTimeData(obj) {
@@ -70,11 +69,7 @@
 <div class="testingWithData"></div>
 <div class="showMessages" style="color:green"></div>
 
-
-
-
 <br />
-<input type='button' onclick="makeJSONRequestWow" value='click meee' />
   <div class="dFastFocus_BodyContainer">
         <div class="dFastFocus_SectionContainer dFastFocus_SectionOne">
             <div class="header">
