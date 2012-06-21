@@ -7,7 +7,6 @@
   <Content type="html">
     <![CDATA[
  
-<link href="https://raw.github.com/abalpeep/StreamWork_FastFocus/master/style.css"   rel="Stylesheet"></link>
  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 
    <script type="text/javascript">
@@ -283,6 +282,149 @@ $(".dRetrievedInfo").html(str);
 
 
     </script>
+    
+    
+    
+    .dError
+{
+    font-size: 20px;
+    color: red;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.dFastFocus_BodyContainer
+{
+    width: 700px;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #C9C8C9;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 0 3px #CFCFCF;
+    box-shadow: 0 0 3px #CFCFCF;
+}
+.dFastFocus_SectionContainer
+{
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+.dFastFocus_SectionOne
+{
+}
+.dFastFocus_SectionOne .header
+{
+    font-size: 18px;
+    color: Gray;
+}
+.dFastFocus_SectionOne .KeyIssuesList
+{
+    width: 650px;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.dFastFocus_SectionOne .KeyIssue
+{
+    width: 650px;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.dFastFocus_SectionTwo
+{
+    margin-top: 20px;
+}
+.dFastFocus_SectionTwo .text
+{
+    border: 1px solid #C9C8C9;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 0 3px #CFCFCF;
+    box-shadow: 0 0 3px #CFCFCF;
+    color: black;
+    font-size: 16px;
+    width: 620px;
+    margin-left: 30px;
+    padding: 10px;
+}
+.dFastFocus_SectionThree
+{
+}
+.dFastFocus_SectionThree .text
+{
+    font-size: 16px;
+    color: Gray;
+    margin-bottom: 5px;
+}
+.dFastFocus_SectionThree .BrainStormingPortionList
+{
+    width: 650px;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.dFastFocus_SectionFour
+{
+}
+.dFastFocus_SectionFour .text
+{
+    font-size: 14px;
+    color: Gray;
+    margin-bottom: 5px;
+}
+.dFastFocus_SectionFour .makeSuggestion
+{
+    font-size: 12px;
+    color: black;
+}
+.dFastFocus_SectionFive
+{
+}
+.dFastFocus_SectionFive .text
+{
+    font-size: 18px;
+    color: Gray;
+}
+.dFastFocus_SectionFive .discussionContainer
+{
+}
+.dFastFocus_SectionFive .discussionItemContainer
+{
+    width: 630px;
+    padding: 10px;
+    margin-left: 25px;
+    font-size: 12px;
+    height: 300px;
+    overflow: auto;
+    border: 1px solid #C9C8C9;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 0 3px #CFCFCF;
+    box-shadow: 0 0 3px #CFCFCF;
+}
+.dFastFocus_SectionFive .discussionItem
+{
+    margin-bottom: 5px;
+}
+.dFastFocus_SectionFive .UserName
+{
+    color: Gray;
+}
+.dFastFocus_SectionFive .discussionText
+{
+}
+.dFastFocus_SectionSix
+{
+}
+.dFastFocus_SectionSeven
+{
+}
+.dFastFocus_SectionEight
+{
+}
+
    ]]>
   </Content>
 </Module>
