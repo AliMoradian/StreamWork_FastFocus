@@ -7,7 +7,7 @@
   <Content type="html">
     <![CDATA[
  
-<link href="https://raw.github.com/abalpeep/StreamWork_FastFocus/master/style_Template.css"   rel="Stylesheet"></link>
+<link href="https://raw.github.com/abalpeep/StreamWork_FastFocus/master/style_Template.css"   rel="Stylesheet"  type="text/css"></link>
 
 <div class="dError" >This is a test ...</div> 
    ]]>
