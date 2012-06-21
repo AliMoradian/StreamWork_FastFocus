@@ -7,8 +7,14 @@
   <Content type="html">
     <![CDATA[
  
-<link   rel="Stylesheet" href="https://raw.github.com/abalpeep/StreamWork_FastFocus/master/style_Template.css"   type="text/css"  media="all"></link>
+<style>
+.dError
+{
+    font-size: 20px;
+    color: red;
+    }
 
+</style>
 <div class="dError" >This is a test ...</div> 
    ]]>
   </Content>
